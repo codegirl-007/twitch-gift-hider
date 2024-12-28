@@ -1,0 +1,14 @@
+// manifest.json
+{
+  "manifest_version": 3,
+  "name": "Hide Twitch Gift Button",
+  "version": "1.0",
+  "description": "Hide the 'Gift Sub' button on Twitch to curb spending habits.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
